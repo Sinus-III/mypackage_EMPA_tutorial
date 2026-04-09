@@ -6,3 +6,19 @@ build-backend = "flit_core.buildapi"
 name = "mypackage"
 version = "0.1.0"
 description = "My first package"
+license = {text = "licence.txt"}
+
+dependencies = [
+    "numpy>1.0.0",
+    "scipy"
+]
+
+
+[project.optional-dependencies]
+dev =[
+    "pytest",
+    "pytest-cov"
+]
+else = [
+    "epics"
+]
