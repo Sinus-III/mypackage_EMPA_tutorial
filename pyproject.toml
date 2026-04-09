@@ -9,7 +9,7 @@ description = "My first package"
 license = {text = "licence.txt"}
 
 dependencies = [
-    "numpy>1.0.0",
+    "numpy",
     "scipy"
 ]
 
@@ -20,5 +20,5 @@ dev =[
     "pytest-cov"
 ]
 else = [
-    "epics"
+    "sphinx"
 ]
